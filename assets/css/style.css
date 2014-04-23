@@ -87,7 +87,7 @@ header, #header, section, footer, #footer { margin: 0 auto; }
 
 .container {
 	margin: 0 auto;
-	width: 1250px;
+	width: 960px;
 	background-color: #ffffff;
 }
 
@@ -235,7 +235,7 @@ h2.section-title {
 
 /* 3.4 Portfolio */
 
-.bold-filters { 
+.bold-filters {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
@@ -399,9 +399,9 @@ label.error {
 .theme-sky .button { background-color: #3498db; }
 
 /* B.1.5 Ruby theme */
-.theme-ruby, .theme-ruby .skill-bar-fill, .theme-ruby .bold-filters li.active { background-color: #e51d1d; }
-.theme-ruby section { border-color: #e51d1d; }
-.theme-ruby .button { background-color: #e51d1d; }
+.theme-ruby, .theme-ruby .skill-bar-fill, .theme-ruby .bold-filters li.active { background-color: #771d1d; }
+.theme-ruby section { border-color: #771d1d; }
+.theme-ruby .button { background-color: #771d1d; }
 
 /* B.1.6 Orchid theme */
 .theme-orchid, .theme-orchid .skill-bar-fill, .theme-orchid .bold-filters li.active { background-color: #5a2182; }
@@ -463,8 +463,8 @@ section.theme-emerald { border-color: #27ae60; }
 section.theme-emerald .skill-bar-fill, section.theme-emerald .bold-filters li.active, section.theme-emerald .button { background-color: #27ae60; }
 section.theme-sky { border-color: #3498db; }
 section.theme-sky .skill-bar-fill, section.theme-sky .bold-filters li.active, section.theme-sky .button { background-color: #3498db; }
-section.theme-ruby { border-color: #e51d1d; }
-section.theme-ruby .skill-bar-fill, section.theme-ruby .bold-filters li.active, section.theme-ruby .button { background-color: #e51d1d; }
+section.theme-ruby { border-color: #771d1d; }
+section.theme-ruby .skill-bar-fill, section.theme-ruby .bold-filters li.active, section.theme-ruby .button { background-color: #771d1d; }
 section.theme-orchid { border-color: #5a2182; }
 section.theme-orchid .skill-bar-fill, section.theme-orchid .bold-filters li.active, section.theme-orchid .button { background-color: #5a2182; }
 section.theme-plum { border-color: #673653; }
