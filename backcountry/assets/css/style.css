@@ -1,0 +1,263 @@
+/* A. Hacks and fixes */
+
+/* A.1 HTML5 Fix */
+section, article, header, footer, nav, aside, hgroup { display: block; }
+
+/* A.2 Clear fix */
+
+.clearfix:after, .row:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix, .row { display: inline-block; }
+
+/* A.2.1 Hides from IE5/Mac \*/
+* html .clearfix, * html .row { height: 1px; }
+
+.clearfix, .row  { display: block; }
+/* End hide from IE5/Mac */
+
+/* 1. Generic */
+
+html, body { min-height: 100%; }
+
+body {
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 30px 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	letter-spacing: -1px;
+	color: #000000;
+	background-color: #bbbbbb;
+}
+
+a {
+	color: #888888;
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+}
+
+a img { border: 0; }
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+form { margin: 0; padding: 0; }
+
+form input, form button { -webkit-appearance: none; }
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1em;
+	margin: 1.4em 0 1em 0;
+}
+
+ul { padding-left: 20px; }
+
+li > h4 { margin-bottom: 0;}
+
+.small { font-size: 0.875em; }
+
+.left { float: left; }
+.right { float: right; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.mt0 { margin-top: 0; }
+
+.rounded {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+/* 2. Structure styles */
+
+header, #header, section, footer, #footer { margin: 0 auto; }
+
+.container {
+	margin: 0 auto;
+	width: 1020px;
+	background-color: #ffffff;
+}
+
+section {
+	padding: 25px;
+	border-top: 1px solid #bbbbbb;
+	background-color: #ffffff;
+}
+
+.column {
+	float: left;
+	padding: 15px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.column *:first-child { margin-top: 0; }
+
+.column-row {
+	padding: 0!important;
+}
+
+.separator {
+	padding-top: 15px;
+	border-top: 1px solid #cccccc;
+}
+
+.full-width { width: 100%; }
+.half-width { width: 50%; }
+.one-third { width: 33.33333%; }
+.two-thirds { width: 66.66666%; }
+.one-fourth { width: 25%; }
+.three-fourths { width: 75%; }
+.one-fifth { width: 20%; }
+.two-fifths { width: 40%; }
+.three-fifths { width: 60%; }
+.one-sixth { width: 16.66666% }
+
+/* 3. Sections */
+
+/* 3.1 Section: Intro */
+
+#intro {
+	border: 0;
+	background-color: #eeeeee;
+}
+
+#intro .column h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 3em;
+	font-weight: 800;
+	letter-spacing: -0.07em;
+}
+
+#intro .column h3 {
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: -0.07em;
+}
+
+.bold-profile-pic {
+	width: 90px;
+	max-width: 100%;
+	float: left;
+	margin: 0 15px 0 0;
+	padding: 5px;
+	background-color: #fff;
+}
+
+.bold-profile-info { font-size: 0.875em; }
+
+.bold-social-links {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.bold-social-links li {
+	float: left;
+	margin: 0 8px 8px 0;
+}
+.bold-social-links li a { display: inline-block; }
+.bold-social-links li i { font-size: 1.5em; }
+
+.bold-contacts i {
+	display: inline-block;
+	width: 15px;
+	margin-right: 5px;
+	text-align: center;
+	color: #888;
+}
+
+/* 3.2 Generic section styling */
+
+h2.section-title {
+	font-size: 2em;
+	font-weight: 800;
+	letter-spacing: -0.07em;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+/* B. Color schemes and theme FX */
+
+/* B.1.1 Default theme */
+.theme-default, .theme-light, .theme-default .skill-bar-fill, .theme-light .skill-bar-fill, .theme-default .bold-filters li.active, .theme-light .bold-filters li.active { background-color: #bbbbbb; }
+.theme-default section, .theme-light section { border-color: #bbbbbb; }
+.theme-default .button, .theme-light .button { color: #000000; background-color: #bbbbbb; }
+
+/* B.1.5 Ruby theme */
+.theme-ruby, .theme-ruby .skill-bar-fill, .theme-ruby .bold-filters li.active { background-color: #771d1d; }
+.theme-ruby section { border-color: #771d1d; }
+.theme-ruby .button { background-color: #771d1d; }
+
+
+/* B.2 Subsection theming */
+/* Applying the original color scheme classes to a resume section tag will allow a per-section chromatic customizaton */
+section.theme-default, section.theme-light { border-color: #bbbbbb; }
+section.theme-default .skill-bar-fill, section.theme-default .bold-filters li.active, section.theme-default .button, section.theme-light .skill-bar-fill, section.theme-light .bold-filters li.active, section.theme-light .button { background-color: #bbbbbb; }
+section.theme-ruby { border-color: #771d1d; }
+section.theme-ruby .skill-bar-fill, section.theme-ruby .bold-filters li.active, section.theme-ruby .button { background-color: #771d1d; }
+
+section.theme-default, section.theme-light, section.theme-sun, section.theme-emerald, section.theme-sky, section.theme-ruby, section.theme-plum, section.theme-sea, section.theme-earth, section.theme-orange, section.theme-lava, section.theme-lime, section.theme-grass, section.theme-girly, section.theme-dark { background-color: #ffffff }
+
+/* C. Media queries */
+@media screen and (max-width: 1024px) {
+	.container { width: 960px; }
+	.column { padding: 15px; }
+}
+
+@media screen and (max-width: 800px) {
+	body { padding: 15px 0; }
+	.container { width: 780px; }
+	.column { padding: 10px; }
+}
+
+@media screen and (max-width: 768px) {
+	.container { width: 720px; }
+}
+
+@media screen and (max-width: 640px) {
+	body { padding: 2% 0; }
+	.container { width: 96%; }
+	section { padding: 15px; }
+	.section-description { display: none; }
+	.column { float: none; width: 100%; padding: 10px 0; }
+	.bold-portfolio .column {
+		float: left;
+		width: 50%;
+		padding: 0;
+	}
+	.bold-portfolio .column img { display: block; }
+}
+
+@media screen and (max-device-width: 540px) {
+	.container { width: 450px; }
+	.column { float: none; width: 100%; padding: 10px 0; }
+}
+
+@media screen and (max-width: 320px) {
+	.container { width: 96%; }
+}
+
+@media screen and (max-device-width: 320px) {
+	.container { width: 96%; }
+}
